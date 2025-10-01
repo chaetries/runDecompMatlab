@@ -46,9 +46,10 @@ The dataset contains measured and simulated Mueller matrices from tissue imaging
 │
 ├── sample/
 │   ├── full/
-│   │   └── SAMMM.npz
+│   │   ├── SAMMM.npz
+│   │   └── PPRIMM.npz
 │   └── partial/
-│       └── PPRIM.npz
+│       └── example_partial.npz
 │
 ├── run_full.m
 ├── run_partial.m
@@ -101,4 +102,36 @@ run_partial
 
 ---
 
+## Output Polarimetric Maps
+
+After running either script, **polarimetric decomposition results** will be saved into the same MATLAB output file as additional keys.  
+All output keys are prefixed with **`ML_`**.  
+
+| Key                  | Description                                    | Shape    |
+|-----------------------|-----------------------------------------------|----------|
+| `ML_linrs`           | Predicted linear retardance                    | (H, W)   |
+| `ML_Mdepols`         | Predicted depolarization                       | (H, W)   |
+| `ML_Mdiattenuations` | Predicted diattenuation                        | (H, W)   |
+| `ML_Morientations`   | Predicted optical axis orientation (azimuth)   | (H, W)   |
+
+---
+
+## Citation
+
+If you use this code, models, or dataset in your research, please cite:  
+
+```
+[To be updated with paper/preprint reference]
+```
+
+---
+
 ## Notes
+
+- Models are stored in the repository under:  
+  - `{protect}/model/full/` (for full 4×4)  
+  - `{protect}/model/partial/` (for partial 3×4)  
+
+- Example datasets are available in `{protect}/sample/full/` and `{protect}/sample/partial/`.  
+
+- ⚠️ If using different tissue type, wavelength, or imaging setup, retraining the model will be required.  
