@@ -3,6 +3,8 @@
 This repository demonstrates how to perform decomposition of Mueller matrices using pre-trained machine learning models in MATLAB.  
 The approach avoids computationally heavy **Lu–Chipman decomposition** by running fast inference through ONNX models.
 
+
+
 ---
 
 ## Requirements
@@ -46,15 +48,15 @@ The dataset contains measured and simulated Mueller matrices from tissue imaging
 │
 ├── sample/
 │   ├── full/
-│   │   ├── SAMMM.npz
-│   │   └── PPRIMM.npz
+│   │   └── SAMMM.npz      # Self Validating Automatic Mueller Meso Microscope (SAMMM)
 │   └── partial/
-│       └── example_partial.npz
+│       └── PPRIM.npz      # Portable Pre-term Imaging (PPRIM)
 │
 ├── run_full.m
 ├── run_partial.m
 └── README.md
 ```
+
 
 ---
 
