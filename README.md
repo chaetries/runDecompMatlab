@@ -29,7 +29,7 @@ The dataset contains measured and simulated Mueller matrices from tissue imaging
 | Tissue thickness     | 1–3 cm                  |
 
 - **Training set**: 23 samples (~1,152,000 Mueller matrices used for train/test/validation).  
-- ⚠️ *Note*: If you are working with a different tissue type, wavelength, or imaging setup, retraining will be required.  
+- *Note*: If you are working with a different tissue type, wavelength, or imaging setup, retraining will be required.  
 
 ---
 
@@ -97,7 +97,7 @@ run_full
 ### 2. Partial Mueller Matrix (3×4)  
 Run the decomposition using the partial 12-element Mueller matrix:  
 ```matlab
-run_partial
+run_partial 
 ```
 
 ---
@@ -118,20 +118,8 @@ All output keys are prefixed with **`ML_`**.
 
 ## Citation
 
-If you use this code, models, or dataset in your research, please cite:  
 
-```
-[To be updated with paper/preprint reference]
-```
 
 ---
 
 ## Notes
-
-- Models are stored in the repository under:  
-  - `{protect}/model/full/` (for full 4×4)  
-  - `{protect}/model/partial/` (for partial 3×4)  
-
-- Example datasets are available in `{protect}/sample/full/` and `{protect}/sample/partial/`.  
-
-- ⚠️ If using different tissue type, wavelength, or imaging setup, retraining the model will be required.  
