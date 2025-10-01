@@ -17,7 +17,7 @@ The approach avoids computationally heavy **Lu–Chipman decomposition** by runn
 
 ## Dataset Information
 
-The dataset contains measured and simulated Mueller matrices from tissue imaging.  
+Below is the samples used for training
 
 ### IMP1 Imaging Characteristics
 
