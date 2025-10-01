@@ -48,22 +48,22 @@ The dataset contains measured and simulated Mueller matrices from tissue imaging
 │
 ├── sample/
 │   ├── full/
-│   │   └── SAMMM.npz      # Self Validating Automatic Mueller Meso Microscope (SAMMM)
+│   │   └── SAMMM.mat      # Self Validating Automatic Mueller Meso Microscope (SAMMM)
 │   └── partial/
-│       └── PPRIM.npz      # Portable Pre-term Imaging (PPRIM)
+│       └── PPRIM.mat      # Portable Pre-term Imaging (PPRIM)
 │
 ├── run_full.m
 ├── run_partial.m
 └── README.md
 ```
-
+**Note**: On first run, MATLAB will automatically generate `DecoderFunction.m` files and package folders (e.g., `+cvae_cervix_decoder_best/`) in the respective model directories. These are required for inference and should not be deleted.
 
 ---
 
 ## Sample Data
 
 ### Full Mueller Matrix Example  
-`{protect}/sample/full/SAMMM.npz`  
+`sample/full/SAMMM.mat`
 
 | Key                  | Description                                    | Shape          |
 |-----------------------|-----------------------------------------------|----------------|
@@ -77,7 +77,7 @@ The dataset contains measured and simulated Mueller matrices from tissue imaging
 ---
 
 ### Partial Mueller Matrix Example  
-`{protect}/sample/full/PPRIMM.npz`  
+`sample/partial/PPRIM.mat`
 
 | Key        | Description                              | Shape      |
 |------------|------------------------------------------|------------|
@@ -105,8 +105,8 @@ run_partial
 ---
 
 ## Output Polarimetric Maps
+After running either script, **polarimetric decomposition results** will be saved back to the original data file as additional keys.
 
-After running either script, **polarimetric decomposition results** will be saved into the same MATLAB output file as additional keys.  
 All output keys are prefixed with **`ML_`**.  
 
 | Key                  | Description                                    | Shape    |
