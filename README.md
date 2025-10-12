@@ -1,6 +1,6 @@
 # Mueller Matrix Decomposition (MATLAB)
+<img width="1306" height="664" alt="Screenshot 2025-10-12 at 16 02 17" src="https://github.com/user-attachments/assets/a2da86fb-f9c9-410b-a7ad-ff915369788f" />
 
-<img width="1432" height="680" alt="Screenshot 2025-10-12 at 16 00 42" src="https://github.com/user-attachments/assets/ff2c141f-77a3-4f44-9916-954e5a8313b8" />
 
 
 This repository demonstrates how to perform decomposition of Mueller matrices using pre-trained machine learning models in MATLAB.  
